@@ -76,6 +76,7 @@ int main(void) {
 	printf("세번째로 입력한 값: %d\n", three);
 	*/
 
+	/*
 	// 문자형(하나의 글자), 문자열(여러 개의 글자)
 	// 문자형 선언과 출력
 	char a = 'A';
@@ -85,6 +86,41 @@ int main(void) {
 	char greet[256]; // C에서 문자열은 char형 배열로 취급
 	scanf_s("%s", greet, sizeof(greet));
 	printf("%s\n", greet);
+	*/
+
+	// 경찰서 조서 예제
+	// 이름
+	char name[256];
+	printf("1. 당신의 이름은 무엇입니까?");
+	scanf_s("%s", name, sizeof(name));
+
+	// 나이
+	int age;
+	printf("2. 당신은 몇 살입니까?");
+	scanf_s("%d", &age);
+
+	// 몸무게
+	float weight;
+	printf("3. 당신은 몇 kg입니까?");
+	scanf_s("%f", &weight);
+
+	// 키
+	double height;
+	printf("4. 당신은 몇 cm입니까?");
+	scanf_s("%lf", &height);
+
+	// 범죄
+	char crime[256];
+	printf("5. 무슨 범죄를 저질렀나요?");
+	scanf_s("%s", crime, sizeof(crime));
+
+	// 조서 내용 출력
+	printf("\n\n === 범죄자 정보 === \n\n");
+	printf("이름:   %s\n", name);
+	printf("나이:   %d\n", age);
+	printf("몸무게: %.2f\n", weight);
+	printf("키:     %.2lf\n", height);
+	printf("범죄:   %s\n", crime);
 
 	return 0;
 }
