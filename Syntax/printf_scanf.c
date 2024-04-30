@@ -14,7 +14,7 @@ int main(void) {
 	// printf("2\n"); 한 줄 주석
 	// printf("3\n");
 
-
+	/*
 	// 실수형 변수
 	double pi_double = 3.141592653589793;
 	float pi_float = 3.141592653589793f; // 'f' suffix는 float를 나타냄
@@ -36,16 +36,15 @@ int main(void) {
 
 	// 차이를 출력
 	printf("Double과 Float 값의 차이: %.20lf\n", diff);
+	*/
+
+	// 상수: 변하지 않는 값
+	// 상수 선언
+	const int BIRTH = 1997; // 상수(constant)를 의미하는 키워드이며, 주로 대문자로 쓴다.
+	printf("출생연도는 %d\n", BIRTH);
+	
+	// 상수 변경(불가능)
+	BIRTH = 2000; // 상수는 다른 값으로 변경할 수 없다.
 
 	return 0;
 }
-
-/* 콘솔에 출력된 결과
-Double로 표현한 파이 값 : 3.14159265358979311600
-Float로 표현한 파이 값 : 3.14159274101257324219
-
-Double로 변환한 Float 값 : 3.14159274101257324219
-Float로 변환된 Double 값 : 3.14159274101257324219
-
-Double과 Float 값의 차이 : -0.00000008742278012619
-*/
