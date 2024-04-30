@@ -48,11 +48,20 @@ int main(void) {
 	BIRTH = 2000; // 상수는 다른 값으로 변경할 수 없다.
 	*/
 
+	/*
 	// printf
 	// 연산
 	int add = 3 + 7; // 10
 	printf("3 + 7 = %d\n", add);
 	printf("%d + %d = %d\n", 3, 7, 3 + 7);
+	*/
+
+	// scanf - 키보드 입력을 받아서 저장
+	// 하나의 값 입력받기
+	int input;
+	printf("값을 입력하세요: ");
+	scanf_s("%d", &input);
+	printf("입력값: %d\n", input);
 
 	return 0;
 }
