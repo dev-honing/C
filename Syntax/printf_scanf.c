@@ -82,7 +82,8 @@ int main(void) {
 	printf("%c\n", a);
 
 	// 문자열 선언과 출력
-	char greet[256] = "Hello!"; // C에서 문자열은 char형 배열로 취급
+	char greet[256]; // C에서 문자열은 char형 배열로 취급
+	scanf_s("%s", greet, sizeof(greet));
 	printf("%s\n", greet);
 
 	return 0;
