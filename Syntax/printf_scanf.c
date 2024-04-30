@@ -6,8 +6,8 @@ int main(void) {
 	printf("Hello, World!\n");
 
 	// 정수형 변수
-	int birth = 1997;
-	printf("출생 연도는 %d\n", birth);
+	int age = 26;
+	printf("나이는 %d\n", age);
 	
 	*/
 	// printf("1\n");
