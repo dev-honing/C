@@ -37,7 +37,8 @@ int main(void) {
 	// 차이를 출력
 	printf("Double과 Float 값의 차이: %.20lf\n", diff);
 	*/
-
+	
+	/*
 	// 상수: 변하지 않는 값
 	// 상수 선언
 	const int BIRTH = 1997; // 상수(constant)를 의미하는 키워드이며, 주로 대문자로 쓴다.
@@ -45,6 +46,13 @@ int main(void) {
 	
 	// 상수 변경(불가능)
 	BIRTH = 2000; // 상수는 다른 값으로 변경할 수 없다.
+	*/
+
+	// printf
+	// 연산
+	int add = 3 + 7; // 10
+	printf("3 + 7 = %d\n", add);
+	printf("%d + %d = %d\n", 3, 7, 3 + 7);
 
 	return 0;
 }
