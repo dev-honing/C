@@ -65,6 +65,7 @@ int main(void) {
 	printf("입력값: %d\n", input);
 	*/
 
+	/*
 	// 여러 개의 값 입력받기
 	int one, two, three;
 	printf("3개의 정수를 입력하세요: ");
@@ -73,6 +74,16 @@ int main(void) {
 	printf("첫번째로 입력한 값: %d\n", one);
 	printf("두번째로 입력한 값: %d\n", two);
 	printf("세번째로 입력한 값: %d\n", three);
+	*/
+
+	// 문자형(하나의 글자), 문자열(여러 개의 글자)
+	// 문자형 선언과 출력
+	char a = 'A';
+	printf("%c\n", a);
+
+	// 문자열 선언과 출력
+	char greet[256] = "Hello!"; // C에서 문자열은 char형 배열로 취급
+	printf("%s\n", greet);
 
 	return 0;
 }
