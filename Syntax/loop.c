@@ -31,10 +31,19 @@ int main(void) {
 	printf("Hello, C! %d\n", i++);
 	*/
 	
+	/*
 	// for문으로 반복하기
 	for (int i = 1; i <= 5; i++) {
 		printf("Hello, C! %d\n", i);
 	}
+	*/
+
+	// while문으로 반복하기 - 괄호에 조건을 작성
+	int i = 1;
+	while (i <= 5) {
+		printf("Hello, C! %d\n", i++);
+	}
+
 
 	return 0;
 }
