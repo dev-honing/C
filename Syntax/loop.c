@@ -46,13 +46,22 @@ int main(void) {
 	}
 	*/
 
+	/*
 	// do while문
 	// do { } while (조건);
 	int i = 1;
 	do {
 		printf("Hello, C! %d\n", i++);
 	} while (i <= 5);
+	*/
 
+	// 이중 반복문
+	for (int i = 1; i <= 3; i++) {
+		printf("첫번째 반복문: %d\n", i);
+		for (int j = 1; j <= 5; j++) {
+			printf("    두번째 반복문: %d\n", j);
+		}
+	}
 
 	return 0;
 }
