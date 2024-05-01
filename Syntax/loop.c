@@ -55,11 +55,29 @@ int main(void) {
 	} while (i <= 5);
 	*/
 
+	/*
 	// 이중 반복문
 	for (int i = 1; i <= 3; i++) {
 		printf("첫번째 반복문: %d\n", i);
 		for (int j = 1; j <= 5; j++) {
 			printf("    두번째 반복문: %d\n", j);
+		}
+	}
+	*/
+
+	// 구구단 만들기 - 2단 ~ 9단
+	// 2 x 1 = 2
+	// 2 x 2 = 4
+	// .
+	// .
+	// .
+	// 9 x 9 = 81
+
+	for (int i = 2; i <= 9; i++) {
+		printf("==========\n");
+		printf("%d단 시작!\n", i);
+		for (int j = 1; j <= 9; j++) {
+			printf("%d x %d = %d\n", i, j, i * j);
 		}
 	}
 
