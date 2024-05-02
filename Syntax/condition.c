@@ -28,6 +28,9 @@ int main(void) {
 	else if (age >= 17 && age <= 19) { // 17세 이상, 19세 이하
 		printf("당신은 고등학생입니다.\n");
 	}
+	else {
+		printf("당신은 일반인입니다.\n"); // 나머지는 일반인으로 처리
+	}
 
 
 	return 0;
