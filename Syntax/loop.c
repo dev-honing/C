@@ -92,9 +92,21 @@ int main(void) {
 	***** 5
 	*/
 
-	// A. 반복문으로 접근
+	/*
+	// A. 이중 반복문으로 접근
 	for (int i = 1; i <= 5; i++) {
 		for (int j = 1; j <= i; j++) {
+			printf("*");
+		}
+		printf("\n");
+	*/
+
+	// 피라미드 모양 뒤집기
+	for (int i = 1; i <= 5; i++) {
+		for (int j = i; j <= 5-1; j++) {
+			printf(" ");
+		}
+		for (int k = 1; k <= i; k++) {
 			printf("*");
 		}
 		printf("\n");
