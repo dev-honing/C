@@ -101,6 +101,7 @@ int main(void) {
 		printf("\n");
 	*/
 
+	/*
 	// 피라미드 모양 뒤집기
 	for (int i = 1; i <= 5; i++) {
 		for (int j = i; j <= 5-1; j++) {
@@ -111,6 +112,22 @@ int main(void) {
 		}
 		printf("\n");
 	}
+	*/
+
+	// 입력받은 숫자에 맞게, 피라미드를 출력하는 프로그램을 작성하시오.
+	int floor;
+	printf("피라미드를 몇 층으로 쌓을까요?");
+	scanf_s("%d", &floor);
+	for (int i = 0; i < floor; i++) {
+		for (int j = i; j < floor - 1; j++) {
+			printf(" ");
+		}
+		for (int k = 0; k < i * 2 + 1; k++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+
 
 	return 0;
 }
