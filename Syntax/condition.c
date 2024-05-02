@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 
 int main(void) {
 	/*
@@ -61,6 +62,7 @@ int main(void) {
 	}
 	*/
 	
+	/*
 	// &&과 ||
 	int a = 10;
 	int b = 10;
@@ -72,6 +74,11 @@ int main(void) {
 	else {
 		printf("값이 서로 다릅니다.\n");
 	}
+	*/
+
+	// 가위바위보!
+	// 가위: 0, 바위: 1, 보: 2
+
 
 	return 0;
 }
