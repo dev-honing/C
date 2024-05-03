@@ -79,6 +79,7 @@ int main(void) {
 	// 가위바위보!
 	// 가위: 0, 바위: 1, 보: 2
 
+	
 	// srand() 함수를 사용하여 난수 발생기의 시드를 설정
 	// 시드를 설정함으로써 rand() 함수가 생성하는 난수를 예측 가능하게 만듦
 	srand(time(NULL)); // 현재 시간을 시드로 사용
@@ -86,6 +87,7 @@ int main(void) {
 	// rand() 함수를 사용하여 0~2의 무작위 수를 생성
 	int i = rand() % 3; // 0~2의 난수를 생성해 변수 i에 저장
 
+	/*
 	// 생성된 난수에 따라 가위, 바위, 보 중 하나를 출력
 	if (i == 0) {
 		printf("가위\n"); // 난수가 0이면 가위
@@ -95,6 +97,15 @@ int main(void) {
 	}
 	else if (i == 2) {
 		printf("보\n"); // 난수가 2이면 보
+	}
+	*/
+
+	// switch-case문으로 변경
+	switch (i) {
+	case 0: printf("가위\n"); break;
+	case 1: printf("바위\n");
+	case 2: printf("보\n");
+	default: printf("이름이 정해지지 않았습니다.\n");
 	}
 
 	return 0;
